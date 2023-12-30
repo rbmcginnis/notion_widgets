@@ -38,6 +38,12 @@
     <div id="countdown"></div>
   </div>
 
+   <div id="countdown-container">
+    <div id="title">Time To Kickoff v3.3</div>
+    <div id="countdownHeader"></div>
+  </div>
+
+
   <script>
     // Set the date we're counting down to (replace with your desired date and time)
     var countDownDate = new Date("Jan 6, 2024 11:00:00").getTime();
@@ -55,7 +61,7 @@
 
       // Display the countdown
      document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    //document.getElementById("countdown").innerHTML = days  hours  minutes  seconds;
+    document.getElementById("countdownHeader").innerHTML = days  hours  minutes  seconds;
 
 
       // If the countdown is over, display a message
