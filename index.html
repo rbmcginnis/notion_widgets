@@ -39,7 +39,7 @@
 </head>
 <body>
   <div id="countdown-container">
-    <div id="title">Time To Kickoff v3.16</div>
+    <div id="title">Time To Kickoff v3.18</div>
     <div id="countdown"></div>
     <div id="countdownHeader"></div>
   </div>
@@ -61,7 +61,11 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Display the countdown
-     document.getElementById("countdown").innerHTML = "&nbsp &nbsp" + (days).toString().padStart(3, "0") + "&nbsp &nbsp &nbsp" + hours + "&nbsp &nbsp &nbsp" + minutes + "&nbsp &nbsp &nbsp" + seconds + "&nbsp &nbsp &nbsp";
+     document.getElementById("countdown").innerHTML = "&nbsp &nbsp" + 
+       (days).toString().padStart(3, "0") + "&nbsp &nbsp &nbsp" + 
+       (hours).toString().padStart(2, "0") + "&nbsp &nbsp &nbsp" + 
+       (minutes).toString().padStart(2, "0") + "&nbsp &nbsp &nbsp" + 
+       (seconds).toString().padStart(2, "0")+ "&nbsp &nbsp &nbsp";
      document.getElementById("countdownHeader").innerHTML = "DAYS &#160 &#160 &#160 HOURS &#160 &#160 &#160 MINUTES &#160 &#160 &#160 SECONDS";
 
       // If the countdown is over, display a message
