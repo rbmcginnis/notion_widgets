@@ -32,14 +32,14 @@
       font-size: 36px;
     }
       #countdownHeader {
-      font-size: 20px;
+      font-size: 14px;
       color: red;
     }
   </style>
 </head>
 <body>
   <div id="countdown-container">
-    <div id="title">Time To Kickoff v3.9</div>
+    <div id="title">Time To Kickoff v3.10</div>
     <div id="countdown"></div>
     <div id="countdownHeader"></div>
   </div>
@@ -61,9 +61,8 @@
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
       // Display the countdown
-     document.getElementById("countdown").innerHTML = days + "------" + hours + "------" + minutes + "      " + seconds + "      ";
-     document.getElementById("countdownHeader").innerHTML = "days     hours      minutes      seconds";
-
+     document.getElementById("countdown").innerHTML = days + "     " + hours + "     " + minutes + "      " + seconds + "      ";
+     document.getElementById("countdownHeader").innerHTML = "DAYS     HOURS      MINUTES      SECONDS";
 
       // If the countdown is over, display a message
       if (distance < 0) {
