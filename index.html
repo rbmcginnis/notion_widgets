@@ -39,7 +39,7 @@
 </head>
 <body>
   <div id="countdown-container">
-    <div id="title">Time To Kickoff v3.19</div>
+    <div id="title">Time To Kickoff v3.20</div>
     <div id="countdown"></div>
     <div id="countdownHeader"></div>
   </div>
@@ -66,7 +66,9 @@
        (hours).toString().padStart(2, "0") + "&nbsp &nbsp &nbsp" + 
        (minutes).toString().padStart(2, "0") + "&nbsp &nbsp &nbsp" + 
        (seconds).toString().padStart(2, "0")+ "&nbsp &nbsp &nbsp";
-     document.getElementById("countdownHeader").innerHTML = "DAYS &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp HOURS &nbsp &nbsp &nbsp &nbsp &nbsp MINUTES &#160 &#160 &#160 SECONDS";
+     document.getElementById("countdownHeader").innerHTML = "&nbsp &nbsp DAYS 
+       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+       HOURS &nbsp &nbsp &nbsp &nbsp &nbsp MINUTES &nbsp &nbsp &nbsp SECONDS";
 
       // If the countdown is over, display a message
       if (distance < 0) {
